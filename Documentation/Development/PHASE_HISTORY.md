@@ -73,3 +73,4 @@ This document records the chronological development trajectory of the MECH-XR pr
   - Automated tests: **All 71 tests passing** (`TEST-01` to `TEST-P6.1-10`).
   - Production build: `Builds/MECH-XR-PHASE6-1-v2.apk` verified and deployed to physical hardware.
   - Report: [`MECH_XR_PHASE6_1_SCROLL_FIX_REPORT.md`](MECH_XR_PHASE6_1_SCROLL_FIX_REPORT.md).
+

@@ -108,3 +108,4 @@ MECH-XR avoids binary asset bloat and proprietary 3D CAD licensing by generating
 - **Dynamic Batching & Instancing**: Procedurally synthesized meshes share unified material instances grouped by metal class (Cast Iron, Hardened 52100 Steel, Phosphor Bronze, Industrial Gold).
 - **Zero Asset Overhead**: The total project size remains exceptionally compact (~8 MB source Assets), allowing fast load times and minimal thermal impact on mobile processors.
 - **Target Frame Rate**: Locked at 60 FPS (`Application.targetFrameRate = 60`) with vsync synchronized to the POCO X6 5G display.
+

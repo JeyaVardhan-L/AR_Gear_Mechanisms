@@ -48,3 +48,4 @@ adb install -r Builds/MECH-XR-PHASE6-1-v2.apk
 4. If prompted, allow **Install unknown apps** for your file manager.
 5. Tap **Install** (or **Update**).
 6. Ensure **Google Play Services for AR (ARCore)** is installed on the target device.
+
