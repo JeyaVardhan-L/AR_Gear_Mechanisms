@@ -1,49 +1,41 @@
 # MECH-XR — Application Visuals & Screen Gallery
 
-This directory houses high-resolution captures of the **MECH-XR** Augmented Reality mobile interface and interactive 3D simulations.
+This directory houses high-resolution captures of the **MECH-XR** Augmented Reality mobile interface and interactive 3D simulations running live on an Android device (Xiaomi POCO X6 5G).
 
 ---
 
-## Showcase Screenshot Trio
+## In-App Screen Gallery
 
-The repository's root [`README.md`](../README.md) showcases three core application views:
-
-| Filename | View Description | Key UI Elements Visible |
-| :--- | :--- | :--- |
-| **`01_catalog_browser.png`** | **Mechanism Library** | Category filter chips (`ALL`, `GEARS`, `ENGINES`, `LINKAGES`, `DRIVES`), vertical mechanism cards, tooth counts, kinematics badges. |
-| **`02_ar_placement.png`** | **AR Plane Placement** | Real-world surface tracking, dynamic targeting reticle, placed 3D mechanical assembly, rotation and pinch-scale feedback. |
-| **`03_experiment_lab.png`** | **Experiment Lab** | Live parameter sliders (RPM, Torque, Efficiency), thermodynamic Power/Loss channel plots, live SI telemetry readout. |
+| Preview | Filename | Mechanism & View Mode | Technical Details |
+| :---: | :--- | :--- | :--- |
+| <img src="01_ar_herringbone_gears.png" width="160" alt="Herringbone Gear Pair"/> | **`01_ar_herringbone_gears.png`** | **Herringbone Gear Pair**<br/>*(Assembled AR Kinematics)* | Double-helical thrust-canceling gear teeth generated procedurally with mounting stanchions, baseplate, and 120 RPM velocity HUD. |
+| <img src="02_ar_automotive_differential.png" width="160" alt="Automotive Differential Assembled"/> | **`02_ar_automotive_differential.png`** | **Automotive Differential**<br/>*(Assembled AR Assembly)* | Epicyclic torque-vectoring axle featuring ring crown gear, drive pinion, dual spider bevel pinions, and side gears. |
+| <img src="03_ar_exploded_differential.png" width="160" alt="Automotive Differential Exploded"/> | **`03_ar_exploded_differential.png`** | **Automotive Differential**<br/>*(Exploded View Inspection)* | Simultaneous component separation along calculated translation vectors showing internal bevel mesh and axle alignment. |
+| <img src="04_ar_simple_gear_train.png" width="160" alt="Simple Gear Train Assembled"/> | **`04_ar_simple_gear_train.png`** | **Simple Gear Train**<br/>*(Assembled AR Kinematics)* | Three-shaft gear transmission featuring driver, idler, and driven spur gears rotating with active AR plane tracking. |
+| <img src="05_ar_exploded_gear_train.png" width="160" alt="Simple Gear Train Exploded"/> | **`05_ar_exploded_gear_train.png`** | **Simple Gear Train**<br/>*(Exploded View Inspection)* | Forward axial displacement of gears and mounting collars for individual tooth inspection and clearance verification. |
+| <img src="06_ar_internal_gear_pair.png" width="160" alt="Internal Gear Pair Exploded"/> | **`06_ar_internal_gear_pair.png`** | **Internal Gear Pair**<br/>*(Exploded View Inspection)* | Annular internal ring gear and spur pinion detached along axis showing internal tooth profile and carrier ring. |
 
 ---
 
-## How to Add or Update Screenshots
+## Capturing Future Visuals
 
-### Option 1: Direct File Copy from Smartphone
-1. Capture screenshots on your Android smartphone (e.g. **Power + Volume Down**).
-2. Transfer the captures from your phone's `Pictures/Screenshots/` folder to this directory (`Screenshots/`).
-3. Rename the 3 files to match:
-   - `01_catalog_browser.png`
-   - `02_ar_placement.png`
-   - `03_experiment_lab.png`
+### Option 1: Physical Device Shortcut
+- Press **Power + Volume Down** simultaneously on your Android device.
+- Transfer captures from your device's `Pictures/Screenshots/` directory to `Screenshots/`.
 
 ### Option 2: Android Debug Bridge (ADB)
-With your Android phone connected via USB (**USB Debugging** enabled):
+With your Android smartphone connected via USB with **USB Debugging** enabled:
 
 ```bash
-# 1. Capture and pull Catalog Browser
-adb shell screencap -p /sdcard/01_catalog_browser.png
-adb pull /sdcard/01_catalog_browser.png Screenshots/
-adb shell rm /sdcard/01_catalog_browser.png
+# Capture full-resolution screen
+adb shell screencap -p /sdcard/mechxr_capture.png
 
-# 2. Capture and pull AR Surface Placement
-adb shell screencap -p /sdcard/02_ar_placement.png
-adb pull /sdcard/02_ar_placement.png Screenshots/
-adb shell rm /sdcard/02_ar_placement.png
+# Pull image to Screenshots directory
+adb pull /sdcard/mechxr_capture.png Screenshots/
 
-# 3. Capture and pull Experiment Lab
-adb shell screencap -p /sdcard/03_experiment_lab.png
-adb pull /sdcard/03_experiment_lab.png Screenshots/
-adb shell rm /sdcard/03_experiment_lab.png
+# Remove temporary file from device
+adb shell rm /sdcard/mechxr_capture.png
 ```
+
 
 

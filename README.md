@@ -17,12 +17,28 @@
 
 <div align="center">
 
-| 📚 Mechanism Library | 🌐 Augmented Reality Kinematics | 🔬 Scientific Experiment Lab |
+| ⚙️ Double-Helical Kinematics | 🚗 Epicyclic Torque-Vectoring | 💥 Exploded View Inspection |
 | :---: | :---: | :---: |
-| <img src="Screenshots/01_catalog_browser.png" width="280" alt="Mechanism Library & Category Browser"/> | <img src="Screenshots/02_ar_placement.png" width="280" alt="Augmented Reality Surface Placement"/> | <img src="Screenshots/03_experiment_lab.png" width="280" alt="Scientific Experiment Lab Telemetry"/> |
-| *26 mechanisms across 4 categories with smooth vertical touch scrolling* | *Millimeter-accurate surface tracking, dynamic reticle & 6-DoF spatial anchoring* | *Real-time RPM/torque modulation, efficiency tuning & thermodynamic power graphs* |
+| <img src="Screenshots/01_ar_herringbone_gears.png" width="270" alt="Herringbone Gear Pair AR Kinematics"/> | <img src="Screenshots/02_ar_automotive_differential.png" width="270" alt="Automotive Differential Assembled AR"/> | <img src="Screenshots/03_ar_exploded_differential.png" width="270" alt="Automotive Differential Exploded View"/> |
+| **Herringbone Gear Pair**<br/>*Double-helical thrust-canceling teeth running at 120 RPM in live tabletop AR* | **Automotive Differential**<br/>*Crown gear, drive pinion & spider bevel gears anchored with 6-DoF tracking* | **Exploded Assembly**<br/>*Simultaneous component detachment along functional mechanical axes* |
 
 </div>
+
+<details>
+<summary><b>🔍 View Additional In-App AR Captures (Simple Gear Train & Internal Annular Gear)</b></summary>
+
+<br/>
+
+<div align="center">
+
+| 🔄 Three-Shaft Transmission | 📐 Axial Component Separation | ⭕ Annular Ring Transmission |
+| :---: | :---: | :---: |
+| <img src="Screenshots/04_ar_simple_gear_train.png" width="260" alt="Simple Gear Train Assembled"/> | <img src="Screenshots/05_ar_exploded_gear_train.png" width="260" alt="Simple Gear Train Exploded"/> | <img src="Screenshots/06_ar_internal_gear_pair.png" width="260" alt="Internal Gear Pair Exploded"/> |
+| **Simple Gear Train**<br/>*Driver, idler, and driven spur gears rotating with active AR plane tracking* | **Gear Train Exploded**<br/>*Individual shaft and gear clearance inspection* | **Internal Gear Pair**<br/>*Annular ring gear and spur pinion exploded view* |
+
+</div>
+
+</details>
 
 <br/>
 
@@ -40,7 +56,7 @@
 +-----------------------------------------------------------------------------------+
 ```
 
-*For capture specifications and showcase details, see [`Screenshots/README.md`](Screenshots/README.md).*
+*For device capture specifications and full gallery details, see [`Screenshots/README.md`](Screenshots/README.md).*
 
 ---
 
