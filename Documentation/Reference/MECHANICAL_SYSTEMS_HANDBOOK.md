@@ -1,5 +1,5 @@
-# MECH-XR
-## Complete Technical Documentation, System Architecture & Viva Preparation Handbook
+# MECH-XR — Technical Architecture & Mechanical Systems Manual
+## Comprehensive Engineering Reference & System Specification
 
 **Project:** MECH-XR — Interactive Mechanical Engineering Laboratory  
 **Platform:** Android Augmented Reality Application  
@@ -47,7 +47,7 @@ Traditional mechanical engineering education relies on:
 2. Abstract mathematical kinematic equations.
 3. Physical laboratory test rigs.
 4. Static 3D CAD drawings.
-5. Classroom slide lectures.
+5. Static 2D slides and diagrams.
 
 These conventional pedagogical methods present severe real-world limitations:
 - **Spatial Cognitive Load:** Visualizing complex 3D kinematic interactions (such as planetary gear carrier movement, hypoid bevel tooth engagement, or automotive differential carrier motion during turns) from 2D orthogonal drawings is difficult for students.
@@ -489,7 +489,7 @@ AR Capabilities:     android.hardware.camera.ar (Required)
 
 ---
 
-# PART 12 — COMPLETE VIVA VOCE QUESTIONS & MODEL ANSWERS
+# PART 12 — ARCHITECTURAL & ENGINEERING DESIGN FAQ
 
 ### Q1: What is the core objective of MECH-XR?
 **Answer:** MECH-XR is an interactive Android Augmented Reality application designed to transform abstract mechanical engineering theory into spatial 3D visualizations and quantitative laboratory simulations. It enables students to anchor 26 mechanical systems in their real environment, interact with operational parameters (RPM, torque, efficiency), and observe real-time kinematics and telemetry.
@@ -539,23 +539,7 @@ Because `Time.deltaTime` measures the exact elapsed time between frames in secon
 
 ---
 
-# PART 13 — STEP-BY-STEP PRESENTATION SCRIPT FOR PROFESSORS
-
-### 1. The Opening Pitch (30 seconds)
-> *"Good morning, respected professors. Today we present **MECH-XR**, an interactive Augmented Reality mechanical engineering laboratory developed for Android mobile devices. Our primary goal is to address the visual and physical limitations of traditional engineering education by allowing students to anchor 26 fully operational CAD-grade mechanical assemblies directly onto physical desks and study their motion, kinematics, and telemetry in real time."*
-
-### 2. Architecture & Tech Stack (45 seconds)
-> *"The application is built on **Unity 6.3 LTS** using **C#** and **AR Foundation 6.0**, integrating Google's **ARCore** for 6-DoF Visual-Inertial Odometry and surface plane detection. Instead of importing static 3D models that inflate app size, all gears, engine cutaways, and linkages are generated **procedurally in C# code**, keeping our final production APK at just 28 megabytes while maintaining CAD-grade tooth geometry."*
-
-### 3. Mechanical Kinematics & Experiment Lab (60 seconds)
-> *"MECH-XR is an interactive scientific simulator. Through our **Experiment Lab**, students can adjust shaft speeds from 10 to 300 RPM, observe real-time SI power and torque equations (\(P = T\omega\)), analyze power losses across efficiency models, and examine live kinematic curves. Our catalog spans 26 mechanisms across four categories: 14 gear systems—including planetary gears, reverted trains, double-helical herringbone gears, and harmonic drives; 4 reciprocating engines including a 720-degree four-stroke IC engine; 4 linkages demonstrating Grashof loop closures; and 4 industrial mechanical drives."*
-
-### 4. Real-World Engineering & Debugging (45 seconds)
-> *"During mobile validation on our Xiaomi POCO X6 5G hardware, we resolved complex engineering challenges. For example, in Phase 6.1, we resolved an issue where touch drag gestures were lost on mobile touchscreens due to missing raycast targets in the UI graphics hierarchy. We repaired the event architecture, implemented dynamic layout rebuilding, and established an automated headless test harness of **71 passing test cases** verifying kinematic equations, screen transitions, and mobile touch readiness."*
-
----
-
-# PART 14 — SOURCE CODE MAP & PROJECT REPOSITORY STRUCTURE
+# PART 13 — SOURCE CODE MAP & REPOSITORY ARCHITECTURE
 
 ```text
 MECH-XR/

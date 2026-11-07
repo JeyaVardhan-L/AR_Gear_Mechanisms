@@ -1,5 +1,5 @@
-# MECH-XR — EXPERIMENT LAB & ENGINEERING MATHEMATICS
-## Complete Technical Supplement to the Viva Handbook
+# MECH-XR — EXPERIMENT LAB MATHEMATICAL SPECIFICATION
+## Analytical Telemetry, Physics Formulations & Parameter Reconciliation
 
 **Project:** MECH-XR  
 **Module:** Scientific Experiment Lab  
@@ -170,7 +170,7 @@ T_{\text{out}} = 0.90 \times 10 \times 2 = \mathbf{18\ N\cdot m}
 \]
 The ideal output was \(20\text{ N}\cdot\text{m}\). The modeled real output is \(18\text{ N}\cdot\text{m}\). The difference represents the effect of the assumed transmission loss.
 
-**Viva answer:** We multiply by efficiency because the real transmission cannot deliver all the input power as useful output power.
+**Physical Principle:** We multiply by efficiency because the real transmission cannot deliver all the input power as useful output power.
 
 ---
 
@@ -424,7 +424,7 @@ The A/B comparison system in MECH-XR enables direct comparative study:
 | **Output Torque (\(T_{\text{out}}\))** | \(19.00\text{ N}\cdot\text{m}\) | \(16.00\text{ N}\cdot\text{m}\) | \(-3.00\text{ N}\cdot\text{m}\) | Torque dropped due to lower efficiency |
 | **Output RPM** | \(60\text{ RPM}\) | \(120\text{ RPM}\) | \(+60\text{ RPM}\) | Output speed doubled proportionally |
 
-**Viva Insight:** This demonstrates that even if a machine runs faster and transmits more gross power, lower transmission efficiency significantly degrades output torque and creates massive thermal losses.
+**Engineering Insight:** This demonstrates that even if a machine runs faster and transmits more gross power, lower transmission efficiency significantly degrades output torque and creates massive thermal losses.
 
 ---
 
@@ -638,7 +638,7 @@ The older documentation value of \(19.7\%\) corresponds to an angle of \(\beta =
 
 ---
 
-# 11. TOP 20 EXPERIMENT LAB VIVA QUESTIONS & MODEL ANSWERS
+# 11. EXPERIMENT LAB ENGINEERING & PHYSICS FAQ
 
 ### Q1: What is the core mathematical relationship in the Experiment Lab?
 **Answer:** The core relationship is the rotational power equation: \(P = T \cdot \omega\), where power in watts is the product of applied torque in newton-metres and angular velocity in radians per second.
