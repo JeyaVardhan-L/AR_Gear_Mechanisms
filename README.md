@@ -13,7 +13,18 @@
 
 ---
 
-## Product Preview
+## Application Showcase
+
+<div align="center">
+
+| 📚 Mechanism Library | 🌐 Augmented Reality Kinematics | 🔬 Scientific Experiment Lab |
+| :---: | :---: | :---: |
+| <img src="Screenshots/01_catalog_browser.png" width="280" alt="Mechanism Library & Category Browser"/> | <img src="Screenshots/02_ar_placement.png" width="280" alt="Augmented Reality Surface Placement"/> | <img src="Screenshots/03_experiment_lab.png" width="280" alt="Scientific Experiment Lab Telemetry"/> |
+| *26 mechanisms across 4 categories with smooth vertical touch scrolling* | *Millimeter-accurate surface tracking, dynamic reticle & 6-DoF spatial anchoring* | *Real-time RPM/torque modulation, efficiency tuning & thermodynamic power graphs* |
+
+</div>
+
+<br/>
 
 ```text
 +-----------------------------------------------------------------------------------+
@@ -29,7 +40,7 @@
 +-----------------------------------------------------------------------------------+
 ```
 
-*For device capture guidelines and high-resolution screen showcase requirements, see [`Screenshots/README.md`](Screenshots/README.md).*
+*For capture specifications and showcase details, see [`Screenshots/README.md`](Screenshots/README.md).*
 
 ---
 

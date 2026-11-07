@@ -4,35 +4,46 @@ This directory houses high-resolution captures of the **MECH-XR** Augmented Real
 
 ---
 
-## Capturing In-App Visuals on Android
+## Showcase Screenshot Trio
 
-To capture real-time AR sessions from physical Android hardware:
+The repository's root [`README.md`](../README.md) showcases three core application views:
 
-### Option 1: Android Debug Bridge (ADB)
-Connect your Android smartphone via USB with **USB Debugging** enabled:
-
-```bash
-# Capture full-resolution screen
-adb shell screencap -p /sdcard/mechxr_capture.png
-
-# Pull image to local Screenshots directory
-adb pull /sdcard/mechxr_capture.png Screenshots/
-
-# Remove temporary file from device
-adb shell rm /sdcard/mechxr_capture.png
-```
-
-### Option 2: Physical Device Shortcut
-- Press **Power + Volume Down** simultaneously.
-- Transfer captures from your device's `Pictures/Screenshots/` directory.
+| Filename | View Description | Key UI Elements Visible |
+| :--- | :--- | :--- |
+| **`01_catalog_browser.png`** | **Mechanism Library** | Category filter chips (`ALL`, `GEARS`, `ENGINES`, `LINKAGES`, `DRIVES`), vertical mechanism cards, tooth counts, kinematics badges. |
+| **`02_ar_placement.png`** | **AR Plane Placement** | Real-world surface tracking, dynamic targeting reticle, placed 3D mechanical assembly, rotation and pinch-scale feedback. |
+| **`03_experiment_lab.png`** | **Experiment Lab** | Live parameter sliders (RPM, Torque, Efficiency), thermodynamic Power/Loss channel plots, live SI telemetry readout. |
 
 ---
 
-## Recommended Showcase Views
+## How to Add or Update Screenshots
 
-1. **`01_catalog_browser.png`**: The 26-mechanism catalog view with category filters (`ALL`, `GEARS`, `ENGINES`, `LINKAGES`, `DRIVES`).
-2. **`02_ar_surface_placement.png`**: ARCore plane detection highlighting the dynamic targeting reticle on a tabletop surface.
-3. **`03_kinematic_simulation.png`**: A placed mechanical assembly (e.g. Planetary Gearbox or Four-Stroke Engine) running at live RPM.
-4. **`04_component_inspection.png`**: An isolated gear or piston detached along its mechanical axis with the engineering metadata card.
-5. **`05_experiment_lab_telemetry.png`**: The collapsible Experiment Lab drawer open, showing live RPM, torque, efficiency sliders, and dynamic Power/Loss graphs.
+### Option 1: Direct File Copy from Smartphone
+1. Capture screenshots on your Android smartphone (e.g. **Power + Volume Down**).
+2. Transfer the captures from your phone's `Pictures/Screenshots/` folder to this directory (`Screenshots/`).
+3. Rename the 3 files to match:
+   - `01_catalog_browser.png`
+   - `02_ar_placement.png`
+   - `03_experiment_lab.png`
+
+### Option 2: Android Debug Bridge (ADB)
+With your Android phone connected via USB (**USB Debugging** enabled):
+
+```bash
+# 1. Capture and pull Catalog Browser
+adb shell screencap -p /sdcard/01_catalog_browser.png
+adb pull /sdcard/01_catalog_browser.png Screenshots/
+adb shell rm /sdcard/01_catalog_browser.png
+
+# 2. Capture and pull AR Surface Placement
+adb shell screencap -p /sdcard/02_ar_placement.png
+adb pull /sdcard/02_ar_placement.png Screenshots/
+adb shell rm /sdcard/02_ar_placement.png
+
+# 3. Capture and pull Experiment Lab
+adb shell screencap -p /sdcard/03_experiment_lab.png
+adb pull /sdcard/03_experiment_lab.png Screenshots/
+adb shell rm /sdcard/03_experiment_lab.png
+```
+
 
